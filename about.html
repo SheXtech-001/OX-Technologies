@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AgroLink - Building Agricultural Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body">
+
+     <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-green-700">AgroLink</div>
+                <div class="hidden xl:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="trust.html" class="nav-link">Trust & Safety</a>
+                    <a href="support.html" class="nav-link">Help Center</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#" class="btn-primary">Join Now</a>
+                </div>
+                <button id="menu-toggle" class="xl:hidden text-2xl"><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t p-4 space-y-1">
+            <a href="index.html" class="mobile-nav-item">Home</a>
+            <a href="about.html" class="mobile-nav-item active">About Us</a>
+            <a href="marketplace.html" class="mobile-nav-item">Marketplace</a>
+            <a href="trust.html" class="mobile-nav-item">Trust & Safety</a>
+            <a href="support.html" class="mobile-nav-item">Help Center</a>
+            <a href="contact.html" class="mobile-nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <header class="bg-white py-16 border-b">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">Our Mission to Restore <span class="text-green-700">Trust</span></h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Agriculture is the backbone of the economy, yet it remains one of the most vulnerable sectors for fraud. We are here to change that.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">The Problem</h2>
+                <p class="text-gray-600 mb-6 italic border-l-4 border-green-700 pl-4">
+                    "I paid for a truckload of maize that never arrived, and the seller's phone went off forever." 
+                </p>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    This story is told by thousands of traders every year. Simultaneously, farmers struggle to find honest buyers who won't exploit their prices. The lack of verified data and secure payment systems has created a gap that fraudsters love to exploit.
+                </p>
+
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">The AgroLink Solution</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    We built AgroLink to be more than just a marketplace. It’s a <strong>verification engine</strong>. By combining GPS technology, ID verification, and secure escrow payments, we ensure that every handshake made on our platform is backed by accountability.
+                </p>
+            </div>
+
+            <div class="bg-gray-200 rounded-3xl h-96 flex items-center justify-center border-2 border-dashed border-gray-400">
+                <span class="text-gray-500 font-bold px-10 text-center uppercase tracking-widest">
+                    <img src="images.jfif" alt="man in farm" class="w-full h-full object-cover rounded-3xl">
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-green-50 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-green-800 text-xl mb-3">Transparency</h4>
+                    <p class="text-gray-600">No hidden fees, no fake profiles. What you see is exactly what you get.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-green-800 text-xl mb-3">Fairness</h4>
+                    <p class="text-gray-600">We believe farmers deserve the full value of their sweat and traders deserve the quality they pay for.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-green-800 text-xl mb-3">Security</h4>
+                    <p class="text-gray-600">Our platform is designed with "Security First" architecture to protect your money and your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Ready to trade without the risk?</h2>
+            <p class="text-gray-600 mb-8 text-lg">Join the growing community of verified farmers and traders across the country.</p>
+            <a href="#" class="btn-primary px-10 py-4 text-lg">Create Your Account</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 AgroLink Platforms. All rights reserved.</p>
+    </footer>
+
+   <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.toggle('hidden');
+            icon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+    </script>
+
+</body>
+</html>

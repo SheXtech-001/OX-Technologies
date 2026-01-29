@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace | Browse Verified Crops</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <nav class="navbar bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold tracking-tight text-green-700">AgroLink</span>
+                </div>
+
+                <div class="hidden xl:flex space-x-5 items-center">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="marketplace.html" class="nav-link active font-bold text-green-700">Marketplace</a>
+                    <a href="trust.html" class="nav-link">Trust & Safety</a>
+                    <a href="support.html" class="nav-link">Help Center</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="#" class="text-sm font-semibold text-gray-500 hover:text-gray-900">Log In</a>
+                    <a href="#" class="bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-800 transition">Join Now</a>
+                </div>
+
+                <div class="xl:hidden flex items-center">
+                    <button id="menu-toggle" class="p-2 rounded-md text-gray-500 hover:text-green-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-gray-100 shadow-xl overflow-y-auto">
+            <div class="px-4 py-6 space-y-1">
+                <a href="index.html" class="mobile-nav-item">Home</a>
+                <a href="about.html" class="mobile-nav-item">About Us</a>
+                <a href="marketplace.html" class="mobile-nav-item text-green-700 bg-green-50">Marketplace</a>
+                <a href="trust.html" class="mobile-nav-item">Trust & Safety</a>
+                <a href="support.html" class="mobile-nav-item">Help Center</a>
+                <a href="contact.html" class="mobile-nav-item">Contact</a>
+                
+                <div class="pt-6 grid grid-cols-2 gap-3">
+                    <button class="w-full py-3 text-gray-600 font-bold border border-gray-200 rounded-xl">Log In</button>
+                    <button class="w-full bg-green-700 text-white py-3 rounded-xl font-bold">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+        
+        <aside class="w-full md:w-64 space-y-8">
+            <div>
+                <h3 class="font-bold text-gray-900 mb-4">Filter Crops</h3>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Search crop..." class="w-full border p-2 rounded-lg pl-8 text-sm outline-none focus:ring-1 focus:ring-green-600">
+                        <i class="fa-solid fa-search absolute left-2 top-3 text-gray-400 text-xs"></i>
+                    </div>
+                    
+                    <label class="block">
+                        <span class="text-sm font-medium text-gray-700">Category</span>
+                        <select class="mt-1 block w-full border rounded-lg p-2 text-sm">
+                            <option>Grains & Cereals</option>
+                            <option>Vegetables</option>
+                            <option>Fruits</option>
+                            <option>Tubers</option>
+                        </select>
+                    </label>
+
+                    <label class="block">
+                        <span class="text-sm font-medium text-gray-700">Region</span>
+                        <select class="mt-1 block w-full border rounded-lg p-2 text-sm">
+                            <option>All Regions</option>
+                            <option>Greater Accra</option>
+                            <option>Ashanti</option>
+                            <option>Northern</option>
+                            <option>Western</option>
+                            <option>Volta</option>
+                            <option>Eastern</option>
+                            <option>Central</option>
+                            <option>Brong-Ahafo</option>
+                            <option>Upper East</option>
+                            <option>Upper West</option>
+                            <option>Savannah</option>
+                            <option>Northern East</option>
+                            <option>Ahafo</option>
+                            <option>Oti</option>
+                            <option>Western North</option>
+                            <option>North East</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="border-t pt-6">
+                <h4 class="text-sm font-bold text-gray-900 mb-3">Trust Level</h4>
+                <div class="space-y-2">
+                    <label class="flex items-center text-sm text-gray-600">
+                        <input type="checkbox" checked class="mr-2 accent-green-600"> Verified Sellers Only
+                    </label>
+                    <label class="flex items-center text-sm text-gray-600">
+                        <input type="checkbox" class="mr-2 accent-green-600"> Ready for Inspection
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Available Listings <span class="text-sm font-normal text-gray-500">(142 items)</span></h2>
+                <select class="border rounded-lg p-2 text-sm">
+                    <option>Sort by: Newest First</option>
+                    <option>Price: Low to High</option>
+                    <option>Trust Score: High to Low</option>
+                </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="download.jfif" alt="Maize" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-green-600 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-tighter">
+                            <i class="fa-solid fa-shield-check"></i> Verified Harvest
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-gray-900">Yellow Maize (Dry)</h3>
+                            <span class="text-green-700 font-bold">GH₵320.00<span class="text-xs font-normal text-gray-500">/ton</span></span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4"><i class="fa-solid fa-location-dot"></i> Ejura, Ashanti Region</p>
+                        
+                        <div class="flex items-center space-x-2 border-t pt-4">
+                            <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 text-xs font-bold">KA</div>
+                            <div class="flex-1">
+                                <p class="text-[10px] font-bold text-gray-900 leading-none">Kofi Appiah</p>
+                                <p class="text-[9px] text-gray-400 italic">Trusted Seller • 4.9 ★</p>
+                            </div>
+                            <a href="#" class="bg-green-100 text-green-700 p-2 rounded-lg hover:bg-green-700 hover:text-white transition">
+                                <i class="fa-solid fa-message text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="relative h-48 bg-gray-200">
+                        <img src="fresh tomato.jfif" alt="Tomatoes" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-black px-2 py-1 rounded uppercase tracking-tighter">
+                            <i class="fa-solid fa-truck-fast"></i> Delivery Ready
+                        </span>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-gray-900">Fresh Roma Tomatoes</h3>
+                            <span class="text-green-700 font-bold">GH₵15.00<span class="text-xs font-normal text-gray-500">/crate</span></span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4"><i class="fa-solid fa-location-dot"></i> Ada, Greater Accra</p>
+                        
+                        <div class="flex items-center space-x-2 border-t pt-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xs font-bold">MA</div>
+                            <div class="flex-1">
+                                <p class="text-[10px] font-bold text-gray-900 leading-none">Musa Adams</p>
+                                <p class="text-[9px] text-gray-400 italic">Verified Identity • 5.0 ★</p>
+                            </div>
+                            <a href="#" class="bg-green-100 text-green-700 p-2 rounded-lg hover:bg-green-700 hover:text-white transition">
+                                <i class="fa-solid fa-message text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </main>
+    </div>
+
+    <footer class="footer mt-12">
+        <p>&copy; 2026 AgroLink Platforms. Prices updated in real-time.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.toggle('hidden');
+            icon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+    </script>
+</body>
+</html>

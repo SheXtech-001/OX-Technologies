@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center | AgroLink Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="site-body">
+
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-green-700">AgroLink</div>
+                <div class="hidden xl:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="trust.html" class="nav-link">Trust & Safety</a>
+                    <a href="support.html" class="nav-link active">Help Center</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#" class="btn-primary">Join Now</a>
+                </div>
+                <button id="menu-toggle" class="xl:hidden text-2xl"><i class="fa-solid fa-bars"
+                        id="menu-icon"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t p-4 space-y-1">
+            <a href="index.html" class="mobile-nav-item">Home</a>
+            <a href="about.html" class="mobile-nav-item">About Us</a>
+            <a href="marketplace.html" class="mobile-nav-item">Marketplace</a>
+            <a href="trust.html" class="mobile-nav-item">Trust & Safety</a>
+            <a href="support.html" class="mobile-nav-item active">Help Center</a>
+            <a href="contact.html" class="mobile-nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <header class="bg-green-50 py-16 border-b border-green-100">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How can we help you today?</h1>
+            <div class="relative mt-8">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                <input type="text" placeholder="Search for articles (e.g., 'How to verify my farm', 'Escrow payments')"
+                    class="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 shadow-sm focus:ring-2 focus:ring-green-500 outline-none">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+            <div class="bg-white p-8 rounded-2xl border border-red-100 hover:border-red-300 transition group">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-red-600">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-4">Trust & Safety</h3>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li><a href="#" class="hover:text-red-600 hover:underline">How we verify farmers</a></li>
+                    <li><a href="#" class="hover:text-red-600 hover:underline">Reporting a suspicious listing</a></li>
+                    <li><a href="#" class="hover:text-red-600 hover:underline">Avoiding offline payment scams</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 hover:border-green-300 transition">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-700">
+                    <i class="fa-solid fa-wallet text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-4">Payments & Escrow</h3>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li><a href="#" class="hover:text-green-700 hover:underline">How escrow works</a></li>
+                    <li><a href="#" class="hover:text-green-700 hover:underline">Payout timelines for farmers</a></li>
+                    <li><a href="#" class="hover:text-green-700 hover:underline">Refund policy</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 hover:border-green-300 transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                    <i class="fa-solid fa-seedling text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-4">Using the App</h3>
+                <ul class="space-y-3 text-gray-600 text-sm">
+                    <li><a href="#" class="hover:text-blue-600 hover:underline">Uploading your first crop</a></li>
+                    <li><a href="#" class="hover:text-blue-600 hover:underline">Setting up your trader profile</a></li>
+                    <li><a href="#" class="hover:text-blue-600 hover:underline">Messaging a seller</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div
+            class="bg-green-900 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <h2 class="text-2xl font-bold mb-2">Still need help?</h2>
+                <p class="text-green-100">Our support team is available 24/7 for fraud-related emergencies.</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="mailto:support@agrolink.com"
+                    class="bg-white text-green-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100">Email Us</a>
+                <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-400">Live
+                    Chat</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 AgroLink Platforms. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.toggle('hidden');
+            icon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+    </script>
+
+</body>
+
+</html>

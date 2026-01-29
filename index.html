@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroLink | Transparent Agricultural Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-green-700">AgroLink</div>
+                <div class="hidden xl:flex space-x-6">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="marketplace.html" class="nav-link">Marketplace</a>
+                    <a href="trust.html" class="nav-link">Trust & Safety</a>
+                    <a href="support.html" class="nav-link">Help Center</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#" class="btn-primary">Join Now</a>
+                </div>
+                <button id="menu-toggle" class="xl:hidden text-2xl"><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t p-4 space-y-1">
+            <a href="index.html" class="mobile-nav-item active">Home</a>
+            <a href="about.html" class="mobile-nav-item">About Us</a>
+            <a href="marketplace.html" class="mobile-nav-item">Marketplace</a>
+            <a href="trust.html" class="mobile-nav-item">Trust & Safety</a>
+            <a href="support.html" class="mobile-nav-item">Help Center</a>
+            <a href="contact.html" class="mobile-nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <header class="bg-green-900 text-white py-20 text-center px-4">
+        <h1 class="text-5xl font-black mb-6">Cultivating Trust.</h1>
+        <p class="text-xl mb-8 opacity-80">The safest way to link farmers with verified traders.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="marketplace.html" class="btn-primary py-4 px-8">Browse Marketplace</a>
+            <a href="trust.html" class="bg-white text-green-900 py-4 px-8 rounded-lg font-bold">How We Verify</a>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <p>&copy; 2026 AgroLink Platforms. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.toggle('hidden');
+            icon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+        });
+    </script>
+</body>
+</html>
